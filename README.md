@@ -159,7 +159,7 @@ tqdm
 If you use this code, please cite:
 
 ```bibtex
-@article{anonymous2025cross,
+@article{anonymous2026cross,
   title={Cross-Cultural Depression Detection in Structured Clinical Interviews},
   year={2026}
 }
