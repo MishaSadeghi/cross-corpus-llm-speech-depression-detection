@@ -119,7 +119,7 @@ audio/extract_egemaps_edaic.py             →   200-D  (cross-corpus, Table 5)
 ## Text Pipeline
 
 1. `text/llm_extract_summaries.py` — Llama generates ~300-word clinical summaries
-2. `text/llm_extract_questions.py` — Llama answers 11 DSM-5 diagnostic questions
+2. `text/llm_extract_questions.py` — Llama answers 11 questions
 3. `text/parse_llm_answers.py` — Parses free-form LLM answers to canonical labels
 4. `text/map_answers_to_scores.py` — Maps labels to numeric scores with mean imputation
 5. `text/deproberta_inference.py` — DepRoBERTa (`rafalposwiata/deproberta-large-v1`) inference
