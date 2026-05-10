@@ -67,7 +67,7 @@ collected under institutional ethical approval. Labels are not included in this
 repository and will be released separately after publication. The dataset
 consists of 252 participants (130 MDD+, 122 controls) diagnosed using SCID-5-CV.
 
-**E-DAIC:** Publicly available English virtual-agent interview dataset.
+**E-DAIC:** Publicly available English interview dataset.
 See [E-DAIC](https://dcapswoz.ict.usc.edu/).
 
 ---
