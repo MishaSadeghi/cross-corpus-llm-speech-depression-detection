@@ -31,7 +31,6 @@ nested_cv/      Within-corpus nested 5-fold cross-validation experiments (Tables
 fixed_split/    Fixed-split evaluations for proposed dataset and E-DAIC (Table 4–5)
 cross_corpus/   Cross-dataset transfer classification (Table 5)
 utils/          Shared utilities (split saving)
-FILE_MAPPING.md Original → new filename mapping
 ```
 
 ---
