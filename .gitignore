@@ -1,0 +1,19 @@
+# SLURM job scripts and output logs
+*.sh
+*.sh.o*
+*.sh.e*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Results and model outputs (data not included in repo)
+*.csv
+*.json
+*.pt
+*.bin
+*.pkl
+
+# OS
+.DS_Store
