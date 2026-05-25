@@ -1,8 +1,8 @@
-# Cross-Cultural Depression Detection in Structured Clinical Interviews
+# Cross-Corpus Depression Detection in Semi-Structured Clinical Interviews
 
 Code for the paper:
 
-> **Cross-Cultural Depression Detection in Structured Clinical Interviews**  
+> **Cross-Corpus Depression Detection in Semi-Structured Clinical Interviews**  
 > *Under review*
 
 ---
@@ -160,7 +160,7 @@ If you use this code, please cite:
 
 ```bibtex
 @article{anonymous2026cross,
-  title={Cross-Cultural Depression Detection in Structured Clinical Interviews},
+  title={Cross-Corpus Depression Detection in Semi-Structured Clinical Interviews},
   year={2026}
 }
 ```
