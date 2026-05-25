@@ -27,9 +27,9 @@ The pipeline includes:
 ```
 audio/          Diarization, patient audio extraction, and feature extraction scripts
 text/           LLM-based text feature extraction pipeline
-nested_cv/      Within-corpus nested 5-fold cross-validation experiments (Tables 1–2)
-fixed_split/    Fixed-split evaluations for proposed dataset and E-DAIC (Table 4–5)
-cross_corpus/   Cross-dataset transfer classification (Table 5)
+nested_cv/      Within-corpus nested 5-fold cross-validation experiments
+fixed_split/    Fixed-split evaluations for the proposed dataset and E-DAIC
+cross_corpus/   Cross-dataset transfer classification
 utils/          Shared utilities (split saving)
 ```
 
@@ -86,7 +86,7 @@ Step 2  audio/diarize_proposed.py           RTTM  →  patient-only WAV
                                              bandpass filter + normalization)
 
 Step 3  Feature extraction — choose one or more:
-        audio/extract_german_xlsr_proposed.py       →  6144-D  (nested CV, Tables 1–2)
+        audio/extract_german_xlsr_proposed.py       →  6144-D  (nested CV)
         audio/extract_xlsr_multilingual_proposed.py →  6144-D  (fixed split / cross-corpus)
         audio/extract_egemaps_proposed.py           →   200-D  (all settings)
 ```
@@ -101,16 +101,16 @@ E-DAIC provides transcript turn timestamps, so no diarization is needed.
 Features are extracted directly from the full audio using transcript boundaries.
 
 ```
-audio/extract_xlsr_multilingual_edaic.py   →  6144-D  (cross-corpus, Table 5)
-audio/extract_egemaps_edaic.py             →   200-D  (cross-corpus, Table 5)
+audio/extract_xlsr_multilingual_edaic.py   →  6144-D  (cross-corpus)
+audio/extract_egemaps_edaic.py             →   200-D  (cross-corpus)
 ```
 
 ## Audio Models
 
 | Use case | Model | Script |
 |---|---|---|
-| Within-corpus nested CV (Tables 1–2) | `jonatasgrosman/wav2vec2-large-xlsr-53-german` | `audio/extract_german_xlsr_proposed.py` |
-| Fixed split + cross-corpus (Tables 4–5) | `facebook/wav2vec2-large-xlsr-53` | `audio/extract_xlsr_multilingual_proposed.py` |
+| Within-corpus nested CV | `jonatasgrosman/wav2vec2-large-xlsr-53-german` | `audio/extract_german_xlsr_proposed.py` |
+| Fixed split + cross-corpus | `facebook/wav2vec2-large-xlsr-53` | `audio/extract_xlsr_multilingual_proposed.py` |
 | E-DAIC | `facebook/wav2vec2-large-xlsr-53` | `audio/extract_xlsr_multilingual_edaic.py` |
 | All datasets (eGeMAPS) | openSMILE eGeMAPSv02 | `audio/extract_egemaps_*.py` |
 
