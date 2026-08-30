@@ -106,7 +106,7 @@ QUALITY_FILTERS = {
 }
 
 ID_COL, Y_COL = "patient_id", "PHQ8-Score"
-ORIGINAL_EXCLUDE = {177, 207, 299}
+ORIGINAL_EXCLUDE = set()  # participant IDs to exclude (configure for your data)
 
 # DepRoBERTa configuration
 CACHE_DIR = Path("CONFIGURE_ME/storage/models/hf_cache")

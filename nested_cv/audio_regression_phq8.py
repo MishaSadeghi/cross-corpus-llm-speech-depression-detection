@@ -61,7 +61,7 @@ AUDIO_SOURCES = {
 OUTPUT_BASE = Path("CONFIGURE_ME/repo/Audio/maximal_regression_v2_phq8")
 QUALITY_FILTERS = {"no_filter": None}
 ID_COL, Y_COL = "patient_id", "PHQ8-Score"
-ORIGINAL_EXCLUDE = {177, 207, 299}
+ORIGINAL_EXCLUDE = set()  # participant IDs to exclude (configure for your data)
 
 FEATURE_METHODS_V2 = ['pca', 'anova', 'mutual_info', 'selectk_pca_pruned']
 

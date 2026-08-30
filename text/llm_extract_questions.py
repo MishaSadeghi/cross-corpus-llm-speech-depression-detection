@@ -41,7 +41,7 @@ PROMPT_TEXT = (
 MAX_CONTEXT_TOKENS = 40000
 MAX_NEW_TOKENS = 500
 TOKEN_SAFETY_MARGIN = 50
-EXCLUDED_IDS = {177, 207, 299}
+EXCLUDED_IDS = set()  # participant IDs to exclude (configure for your data)
 
 
 def get_file_id(filename: str) -> int | None:

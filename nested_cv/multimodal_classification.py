@@ -154,7 +154,7 @@ DEPROBERTA_LR_ENCODER = 1e-5
 DEPROBERTA_MAX_LENGTH = 512
 
 ID_COL, Y_COL = "patient_id", "depressed"
-ORIGINAL_EXCLUDE = {177, 207, 299}
+ORIGINAL_EXCLUDE = set()  # participant IDs to exclude (configure for your data)
 
 # 11 question feature files (q1-q11, already leakage-free as they are
 # per-patient static scores not derived from the training split)

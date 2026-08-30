@@ -142,7 +142,7 @@ DEPROBERTA_LR_ENCODER = 1e-5
 DEPROBERTA_MAX_LENGTH = 512
 
 ID_COL, Y_COL = "patient_id", "PHQ8-Score"
-ORIGINAL_EXCLUDE = {177, 207, 299}
+ORIGINAL_EXCLUDE = set()  # participant IDs to exclude (configure for your data)
 
 # v1 Audio selection params (kept for reference):
 # AUDIO_SELECTION_PARAMS = {

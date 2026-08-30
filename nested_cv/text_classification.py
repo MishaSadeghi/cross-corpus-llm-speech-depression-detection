@@ -109,7 +109,7 @@ QUALITY_FILTERS = {
 }
 
 ID_COL, Y_COL = "patient_id", "depressed"
-ORIGINAL_EXCLUDE = {177, 207, 299}
+ORIGINAL_EXCLUDE = set()  # participant IDs to exclude (configure for your data)
 
 # DepRoBERTa configuration
 # Model is cached at CONFIGURE_ME/storage/models/hf_cache
