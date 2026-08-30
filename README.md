@@ -152,10 +152,12 @@ tqdm
 
 If you use this code, please cite:
 
+```bibtex
 @inproceedings{sadeghi2026crosscorpus,
   title     = {Cross-Corpus Depression Detection in Semi-Structured Clinical Interviews},
   author    = {Sadeghi, Misha and Nguyen, Phuc Truong Loc and Triantafyllopoulos, Andreas and Habibpour, Mahdis and Richer, Robert and Rupp, Lydia Helene and Schindler-Gmelch, Lena and Keinert, Marie and Hager, Malin and Schuller, Bj{\"o}rn and Egger, Bernhard and Berking, Matthias and Eskofier, Bjoern},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
   year      = {2026}
 }
+```
 
