@@ -3,7 +3,7 @@
 Code for the paper:
 
 > **Cross-Corpus Depression Detection in Semi-Structured Clinical Interviews**  
-> *Under review*
+> *EMNLP 2026*
 
 ---
 
@@ -14,7 +14,7 @@ from clinical interview data, combining LLM-based text features, wav2vec2 speech
 features, and eGeMAPSv02 acoustic features.
 
 The pipeline includes:
-- **ASR transcripts** → LLM (Llama) summary + diagnostic Q&A → DepRoBERTa probabilities → 14-D text feature vector
+- **ASR transcripts** → LLM (Llama) summary + symptom-targeted Q&A → DepRoBERTa probabilities → 14-D text feature vector
 - **Wav2Vec2 XLSR-53** audio embeddings (6144-D, German or multilingual)
 - **eGeMAPSv02** LLD-based acoustic features (200-D)
 - **Nested cross-validation** and **fixed-split** evaluation frameworks
@@ -65,7 +65,7 @@ each script.
 **Proposed dataset (German):** A novel German-language clinical interview corpus
 collected under institutional ethical approval. Labels are not included in this
 repository and will be released separately after publication. The dataset
-consists of 252 participants (130 MDD+, 122 controls) diagnosed using SCID-5-CV.
+consists of 252 participants (126 MDD+, 126 MDD-) diagnosed using SCID-5-CV.
 
 **E-DAIC:** Publicly available English interview dataset.
 See [E-DAIC](https://dcapswoz.ict.usc.edu/).
@@ -132,12 +132,6 @@ leakage. The `nested_cv/` scripts handle this automatically.
 
 ---
 
-## Excluded Participants
-
-Patient IDs `{177, 207, 299}` are always excluded (consent/technical issues).
-
----
-
 ## Requirements
 
 ```
@@ -158,9 +152,10 @@ tqdm
 
 If you use this code, please cite:
 
-```bibtex
-@article{anonymous2026cross,
-  title={Cross-Corpus Depression Detection in Semi-Structured Clinical Interviews},
-  year={2026}
+@inproceedings{sadeghi2026crosscorpus,
+  title     = {Cross-Corpus Depression Detection in Semi-Structured Clinical Interviews},
+  author    = {Sadeghi, Misha and Nguyen, Phuc Truong Loc and Triantafyllopoulos, Andreas and Habibpour, Mahdis and Richer, Robert and Rupp, Lydia Helene and Schindler-Gmelch, Lena and Keinert, Marie and Hager, Malin and Schuller, Bj{\"o}rn and Egger, Bernhard and Berking, Matthias and Eskofier, Bjoern},
+  booktitle = {EMNLP 2026},
+  year      = {2026}
 }
-```
+
